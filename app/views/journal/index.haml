@@ -1,9 +1,9 @@
 %nav.main-menu-wrapper
   %ul.main-menu
     %li.main-menu__item
-      %a.main-menu__item-link{href: "/add"} Add entry
+      = link_to 'Add entry', new_entry_path, class: 'main-menu__item-link'
     %li.main-menu__item
-      %a.main-menu__item-link{href: "/view"} View entries
+      = link_to 'View entries', entries_path, class: 'main-menu__item-link'
 
 - content_for(:title) do
   Main Menu
