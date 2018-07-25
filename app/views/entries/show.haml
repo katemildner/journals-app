@@ -9,3 +9,7 @@
     %strong
       Content:
   = @entry.content
+
+- content_for(:title) do
+  Entry
+  = @entry.id
