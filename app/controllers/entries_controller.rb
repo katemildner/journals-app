@@ -10,10 +10,21 @@ class EntriesController < ApplicationController
   def new
   end
 
+  def edit
+    @entry = Entry.find(params[:id])
+  end
+
   def create
     @entry = Entry.new(entry_params)
 
     @entry.save
+    redirect_to @entry
+  end
+
+  def update
+    @entry = Entry.find(params[:id])
+
+    @entry.update(entry_params)
     redirect_to @entry
   end
 
