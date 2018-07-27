@@ -8,6 +8,7 @@ class EntriesController < ApplicationController
   end
 
   def new
+    @entry = Entry.new
   end
 
   def edit
@@ -17,15 +18,21 @@ class EntriesController < ApplicationController
   def create
     @entry = Entry.new(entry_params)
 
-    @entry.save
-    redirect_to @entry
+    if @entry.save
+      redirect_to @entry
+    else
+      render "new"
+    end
   end
 
   def update
     @entry = Entry.find(params[:id])
 
-    @entry.update(entry_params)
-    redirect_to @entry
+    if @entry.update(entry_params)
+      redirect_to @entry
+    else
+      render "edit"
+    end
   end
 
   def destroy
