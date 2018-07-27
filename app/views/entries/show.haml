@@ -10,6 +10,16 @@
       Content:
   = @entry.content
 
+%p
+  = link_to "[Edit]", edit_entry_path(@entry)
+  |
+  = link_to "[Delete]", entry_path(@entry),
+    method: :delete,
+    data: { confirm: "Do you want to delete entry no. #{@entry.id}?" }
+
+%p
+  = link_to "Back to Entries List", entries_path
+
 - content_for(:title) do
   Entry
   = @entry.id
