@@ -6,12 +6,12 @@
           Title:
           = @entry.title
 
-    %p.entry-content
-      %h4
-        %strong.entry-content
-          Content:
-          %br
-          = @entry.content
+    %h4
+      %strong
+        Content:
+        %br
+    %article.entry-content
+      = @entry.content
 
     %p
       = link_to "[Edit]", edit_entry_path(@entry), class: 'entries-menu__item-link--edit'
