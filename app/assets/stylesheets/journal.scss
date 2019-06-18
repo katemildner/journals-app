@@ -22,11 +22,13 @@ body {
 }
 
 .entries-menu-wrapper {
-  width: 50%;
   height: 90vh;
   background-image: image_url("page.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
   margin-top: 5vh;
   overflow-y: hidden;
 }
@@ -52,12 +54,11 @@ body {
 }
 
 .entries-menu {
-  width: 50%;
   margin-top: 9vh;
-  margin-left: 4vw;
   list-style-type: none;
   text-align: left;
   overflow-wrap: break-word;
+  padding-inline-start: unset;
 }
 
 .main-menu__item-link {
