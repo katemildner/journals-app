@@ -1,0 +1,20 @@
+%nav.entries-menu-wrapper
+  %ul.entries-menu
+    - @entries.each do |entry|
+      %li
+        = link_to "#{entry.id}. #{entry.title}", entry_path(entry), class: 'entries-menu__item-link'
+        |
+        = link_to "[Edit]", edit_entry_path(entry), class: 'entries-menu__item-link--edit'
+        |
+        = link_to "[Delete]", entry_path(entry),
+          method: :delete,
+          data: { confirm: "Do you want to delete entry no. #{entry.id}?" },
+          class: 'entries-menu__item-link--delete'
+
+    %p
+      = link_to 'Add entry', new_entry_path, class: 'entries-menu__item-link'
+    %p
+      = link_to "Main Menu", journal_path, class: 'entries-menu__item-link'
+
+- content_for(:title) do
+  List of Entries

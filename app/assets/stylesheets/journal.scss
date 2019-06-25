@@ -1,0 +1,145 @@
+body {
+  color: #000;
+  font-family: 'Dekko', cursive;
+  font-size: 15px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+}
+
+.main-menu-wrapper {
+  width: auto;
+  height: 90vh;
+  background-image: image_url("main.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow-y: hidden;
+}
+
+.entries-menu-wrapper {
+  height: 90vh;
+  background-image: image_url("page.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  overflow-y: hidden;
+}
+
+.entries-wrapper__temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-image: image_url("page.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  margin-top: 5vh;
+  overflow-y: hidden;
+}
+
+.main-menu {
+  padding-left: 0;
+  margin-top: 55vh;
+  list-style-type: none;
+  text-align: center;
+}
+
+.entries-menu {
+  margin-top: 9vh;
+  list-style-type: none;
+  text-align: left;
+  overflow-wrap: break-word;
+  padding-inline-start: unset;
+}
+
+.main-menu__item-link {
+  text-decoration: none;
+  color: black;
+  font-size: 42px;
+  line-height: 57px;
+}
+
+.entries-menu__item-link {
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  line-height: 35px;
+  overflow-wrap: break-word;
+}
+
+.entries-menu__item-link--edit {
+  text-decoration: none;
+  color: #006ac1;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.entries-menu__item-link--delete {
+  text-decoration: none;
+  color: #cc0000;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.entry-wrapper {
+  margin-top: 10vh;
+  text-align: left;
+  width: 22vw;
+  position: relative;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.entry-title {
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.entry-date {
+  font-size: 13px;
+  color: gray;
+}
+
+.entry-content {
+  font-size: 30px;
+  overflow-wrap: break-word;
+  margin-bottom: 20px;
+}
+
+.title-box, .date-box {
+  padding: 3px;
+  margin: 0 0 5px 0;
+}
+
+.button-wrapper {
+  margin: 5px 0 5px 0;
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+}
+
+.button__entry-list {
+  display: inline-block;
+  margin-top: 2vh;
+}
