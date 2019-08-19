@@ -38,6 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
 
+gem 'cancancan'
+
 gem 'haml'
 
 group :development, :test do
