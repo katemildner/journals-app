@@ -2,7 +2,7 @@ class EntriesController < ApplicationController
   authorize_resource
 
   def index
-    @entries = Entry.all
+    @entries = current_user.entries
   end
 
   def show
@@ -18,7 +18,7 @@ class EntriesController < ApplicationController
   end
 
   def create
-    @entry = Entry.new(entry_params)
+    @entry = current_user.entries.create(entry_params)
 
     if @entry.save
       redirect_to @entry
