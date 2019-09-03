@@ -1,4 +1,6 @@
 class EntriesController < ApplicationController
+  authorize_resource
+
   def index
     @entries = Entry.all
   end
