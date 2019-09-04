@@ -13,17 +13,35 @@ body {
   background-image: image_url("main.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   display: flex;
+  justify-content: center;
   margin-top: 5vh;
   margin-bottom: 5vh;
   overflow-y: hidden;
 }
 
 .entries-menu-wrapper {
-  width: 50%;
   height: 90vh;
   background-image: image_url("page.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  overflow-y: hidden;
+}
+
+.entries-wrapper__temp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-image: image_url("page.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   background-size: contain;
   margin-top: 5vh;
   overflow-y: hidden;
@@ -32,18 +50,16 @@ body {
 .main-menu {
   padding-left: 0;
   margin-top: 55vh;
-  margin-left: 10vw;
   list-style-type: none;
   text-align: center;
 }
 
 .entries-menu {
-  width: 50%;
   margin-top: 9vh;
-  margin-left: 4vw;
   list-style-type: none;
   text-align: left;
   overflow-wrap: break-word;
+  padding-inline-start: unset;
 }
 
 .main-menu__item-link {
@@ -77,9 +93,9 @@ body {
 
 .entry-wrapper {
   margin-top: 10vh;
-  margin-left: 6.5vw;
-  text-align: center;
-  width: inherit;
+  text-align: left;
+  width: 22vw;
+  position: relative;
 }
 
 .header {
@@ -92,7 +108,6 @@ body {
 .entry-title {
   font-size: 20px;
   font-style: oblique;
-  text-align: left;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -100,13 +115,11 @@ body {
 
 .entry-date {
   font-size: 13px;
-  text-align: left;
   color: gray;
 }
 
 .entry-content {
-  font-size: 23px;
-  text-align: left;
+  font-size: 30px;
   overflow-wrap: break-word;
   margin-bottom: 20px;
 }

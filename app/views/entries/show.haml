@@ -1,25 +1,29 @@
-%p
-  %h4
-    %strong
-      Title:
-    = @entry.title
+%section.entries-wrapper__temp
+  %article.entry-wrapper
+    %p
+      %h4
+        %strong.entry-title
+          Title:
+          = @entry.title
 
-%p
-  %h4
-    %strong
-      Content:
-  = @entry.content
+    %h4
+      %strong
+        Content:
+        %br
+    %article.entry-content
+      = @entry.content
 
-%p
-  = link_to "[Edit]", edit_entry_path(@entry)
-  |
-  = link_to "[Delete]", entry_path(@entry),
-    method: :delete,
-    data: { confirm: "Do you want to delete entry no. #{@entry.id}?" }
+    %p
+      = link_to "[Edit]", edit_entry_path(@entry), class: 'entries-menu__item-link--edit'
+      |
+      = link_to "[Delete]", entry_path(@entry),
+        method: :delete,
+        data: { confirm: "Do you want to delete entry no. #{@entry.id}?" },
+        class: 'entries-menu__item-link--delete'
 
-%p
-  = link_to "Back to Entries List", entries_path
+    %p
+      = link_to "Back to Entries List", entries_path, class: 'entries-menu__item-link'
 
-- content_for(:title) do
-  Entry
-  = @entry.id
+    - content_for(:title) do
+      Entry
+      = @entry.id
