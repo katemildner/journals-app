@@ -14,4 +14,13 @@
 
   %body
     %header
+      %p.notice
+        = notice
+      %p.alert
+        = alert
+
+      - if current_user
+        = link_to "Sign Out", destroy_user_session_path, method: :delete
+        = link_to "Edit Profile", edit_user_registration_path
+
     = yield

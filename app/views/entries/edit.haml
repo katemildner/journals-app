@@ -25,10 +25,10 @@
       %p
         = form.submit
 
-    %p
-      = link_to "Entries List", entries_path, class: 'entries-menu__item-link'
-    %p
-      = link_to "Main Menu", journal_path, class: 'entries-menu__item-link'
+%p
+  = link_to "Entries List", entries_path
+%p
+  = link_to "Main Menu", root_path
 
     - content_for(:title) do
       Edit Entry

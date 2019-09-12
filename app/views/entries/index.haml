@@ -11,10 +11,10 @@
           data: { confirm: "Do you want to delete entry no. #{entry.id}?" },
           class: 'entries-menu__item-link--delete'
 
-    %p
-      = link_to 'Add entry', new_entry_path, class: 'entries-menu__item-link'
-    %p
-      = link_to "Main Menu", journal_path, class: 'entries-menu__item-link'
+  %p
+    = link_to 'Add entry', new_entry_path
+  %p
+    = link_to "Main Menu", root_path
 
 - content_for(:title) do
   List of Entries
