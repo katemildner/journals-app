@@ -7,6 +7,23 @@ body {
   background-color: #fff;
 }
 
+.user-authentication-wrapper__signed_in {
+  position: absolute;
+  right: 6vw;
+}
+
+.user-authntication__sign-out {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgb(43, 43, 61);
+}
+
+.user-authntication__edit-profile {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgb(43, 43, 61);
+}
+
 .main-menu-wrapper {
   width: auto;
   height: 90vh;
