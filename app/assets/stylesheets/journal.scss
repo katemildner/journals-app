@@ -7,6 +7,12 @@ body {
   background-color: #fff;
 }
 
+.notice-alert-wrapper {
+  position: absolute;
+  right: 6vw;
+  top: .3vh;
+}
+
 .user-authentication-wrapper__signed_in {
   position: absolute;
   right: 6vw;
