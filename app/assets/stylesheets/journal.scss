@@ -13,6 +13,26 @@ body {
   top: .3vh;
 }
 
+.authentication-wrapper-global__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-image: image_url("page.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  margin-top: 5vh;
+  overflow-y: hidden;
+}
+
+.authentication-wrapper-global__content {
+  margin-top: 20vh;
+  width: 20vw;
+  text-align: center;
+}
+
 .user-authentication-wrapper__signed-in {
   position: absolute;
   right: 5vw;
