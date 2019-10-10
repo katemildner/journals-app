@@ -13,6 +13,15 @@ body {
   top: .3vh;
 }
 
+.notice {
+  font-weight: bold;
+}
+
+.alert {
+  font-weight: bold;
+  color: #bb0000;
+}
+
 .authentication-wrapper-global__page {
   display: flex;
   flex-direction: column;
