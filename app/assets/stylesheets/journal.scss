@@ -7,6 +7,65 @@ body {
   background-color: #fff;
 }
 
+.notice-alert-wrapper {
+  position: absolute;
+  right: 5vw;
+  top: .3vh;
+}
+
+.notice {
+  font-weight: bold;
+}
+
+.alert {
+  font-weight: bold;
+  color: #bb0000;
+}
+
+.authentication-wrapper-global__page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  background-image: image_url("page.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: contain;
+  margin-top: 5vh;
+  overflow-y: hidden;
+}
+
+.authentication-wrapper-global__content {
+  margin-top: 20vh;
+  width: 20vw;
+  text-align: center;
+}
+
+.authentication-wrapper-global__content-edit {
+  margin-top: 10vh;
+  width: 20vw;
+  text-align: center;
+}
+
+.user-authentication-wrapper__signed-in {
+  position: absolute;
+  right: 5vw;
+  top: 5vh;
+}
+
+.user-authntication__sign-out {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgb(43, 43, 61);
+}
+
+.user-authntication__edit-profile {
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: rgb(43, 43, 61);
+}
+
 .main-menu-wrapper {
   width: auto;
   height: 90vh;
@@ -56,7 +115,7 @@ body {
 
 .entries-menu {
   margin-top: 9vh;
-  list-style-type: none;
+  font-size: 26px;
   text-align: left;
   overflow-wrap: break-word;
   padding-inline-start: unset;
